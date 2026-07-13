@@ -42,27 +42,27 @@ Profissionais e estudantes de tecnologia consomem diariamente grandes volumes de
 ## 🏗️ Arquitetura
 
 ```
-                        ┌─────────────────────┐
+                        ┌───────────────────────┐
                         │   Cliente / Front-end │
-                        └──────────┬───────────┘
+                        └──────────┬────────────┘
                                    │ HTTP
                                    ▼
-                        ┌─────────────────────┐
+                        ┌───────────────────────┐
                         │   Backend (Java)      │
-                        │   Spring Boot          │
-                        │   API pública           │
-                        │   :8080                 │
-                        └──────────┬───────────┘
+                        │   Spring Boot         │
+                        │   API pública         │
+                        │   :8080               │
+                        └──────────┬────────────┘
                           │                  │
                 chama via HTTP        persiste
                           ▼                  ▼
-              ┌─────────────────┐   ┌───────────────┐
-              │  ML API (Python)  │   │  MySQL          │
-              │  FastAPI           │   │  :3306           │
-              │  Modelo TF-IDF +    │   └───────────────┘
-              │  Regressão Logística │
-              │  :8000                │
-              └─────────────────┘
+              ┌─────────────────────┐ ┌─────────────────┐
+              │  ML API (Python)    │ │  MySQL          │
+              │  FastAPI            │ │  :3306          │
+              │  Modelo TF-IDF +    │ └─────────────────┘
+              │  Regressão Logística│
+              │  :8000              │
+              └─────────────────────┘
 ```
 
 **Fluxo de uma requisição:**
@@ -173,8 +173,8 @@ techtagger/
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/SEU_GRUPO/techtagger.git
-cd techtagger
+git clone https://github.com/No-Country-simulation/G9-BR-Equipe-22.git
+cd G9-BR-Equipe-22
 ```
 
 ### 2. Subir o banco de dados

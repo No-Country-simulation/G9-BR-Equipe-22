@@ -187,6 +187,4 @@ Tem uma ideia de melhoria? Use o template de feature request.
 - [ ] Mensagem de commit segue o padrão descrito acima
 - [ ] Testei o fluxo que mexi, não só assumi que funcionou
 
----
 
-Dúvidas? Chama o time no grupo antes de travar sozinho — hackathon é contra o tempo, não contra o orgulho. 🚀
