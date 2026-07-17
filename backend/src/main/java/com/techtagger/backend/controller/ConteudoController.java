@@ -5,6 +5,10 @@ import com.techtagger.backend.dto.response.ConteudoResponse;
 import com.techtagger.backend.model.Conteudo;
 import com.techtagger.backend.service.ConteudoService;
 import jakarta.validation.Valid;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,11 +35,9 @@ public class ConteudoController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Conteudo>> listarPorCategoria(
-            @RequestParam(required = false) String categoria) {
-        if (categoria != null) {
-            return ResponseEntity.ok(service.buscarPorCategoria(categoria));
-        }
-        return ResponseEntity.ok(List.of());
+    public ResponseEntity<Page<Conteudo>> listar(
+            @RequestParam(required = false) String categoria,
+            @PageableDefault(size = 10, sort = "criadoEm", direction = Sort.Direction.DESC) Pageable pageable) {
+        return ResponseEntity.ok(service.listar(categoria, pageable));
     }
 }

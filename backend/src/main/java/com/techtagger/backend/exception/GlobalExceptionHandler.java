@@ -20,6 +20,14 @@ public class GlobalExceptionHandler {
                 .stream().map(f -> f.getField() + ": " + f.getDefaultMessage()).toList());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
     }
+    @ExceptionHandler(ConteudoNaoEncontradoException.class)
+    public ResponseEntity<Map<String, Object>> handleNaoEncontrado(ConteudoNaoEncontradoException ex) {
+        Map<String, Object> erro = new HashMap<>();
+        erro.put("error", "Not Found");
+        erro.put("detail", ex.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erro);
+    }
+
 
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<Map<String, Object>> handleRuntime(RuntimeException ex) {
@@ -28,4 +36,19 @@ public class GlobalExceptionHandler {
         erro.put("detail", ex.getMessage());
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(erro);
     }
+    @ExceptionHandler(MLServiceUnavailableException.class)
+    public ResponseEntity<Map<String, Object>> handleMLUnavailable(MLServiceUnavailableException ex) {
+        Map<String, Object> erro = new HashMap<>();
+        erro.put("error", "Service Unavailable");
+        erro.put("detail", ex.getMessage());
+        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(erro);
+    }
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<Map<String, Object>> handleGeneric(Exception ex) {
+        Map<String, Object> erro = new HashMap<>();
+        erro.put("error", "Internal Server Error");
+        erro.put("detail", "Erro inesperado. Contate o suporte se persistir.");
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(erro);
+    }
+
 }
