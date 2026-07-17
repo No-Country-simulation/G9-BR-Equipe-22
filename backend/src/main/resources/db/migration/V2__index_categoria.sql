@@ -1,0 +1,1 @@
+CREATE INDEX idx_conteudo_categoria ON conteudo(categoria);
