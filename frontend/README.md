@@ -1,38 +1,5 @@
-# 🖥️ Frontend — TechTagger
+# Vue 3 + Vite
 
-Interface web opcional para cadastro, busca e consulta dos conteúdos processados.
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-> Status: a definir pelo time (React, Vue, ou outra stack)
-
-## Como rodar (exemplo com React/Vite)
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-## Estrutura sugerida
-
-```
-frontend/
-├── src/
-│   ├── components/   # Componentes reutilizáveis
-│   ├── pages/         # Telas da aplicação
-│   ├── services/      # Chamadas à API do backend
-│   └── assets/        # Imagens, ícones, estilos
-└── public/
-```
-
-## Funcionalidades sugeridas
-
-- Formulário para enviar título + texto
-- Exibição da categoria, confiança e palavras-chave retornadas
-- Lista de conteúdos já processados, com filtro por categoria
-- Busca de conteúdos relacionados
-
-## Variáveis de ambiente
-
-```env
-VITE_API_URL=http://localhost:8080
-```
+Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
