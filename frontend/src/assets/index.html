@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\syle.css">
+    
+
+    <title>Gerenciamento de Conteúdos Inteligente</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img class="imagem" src="imagens\logo-2-techtagger.png" alt="Logotipo do projeto hackathon">
+            <h1>Painel de Conteúdos Processados</h1>
+            <p>Cadastre e consulte os itens processados pelo sistema</p>
+            
+        </header>
+
+        <!-- Seção de Cadastro -->
+        <section class="card">
+            <h2>Novo Cadastro</h2>
+            <form id="formCadastro">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="titulo">Título do Conteúdo</label>
+                        <input type="text" id="titulo" required placeholder="Ex: Arquitetura de Software">
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" required>
+                            <option value="">Selecione...</option>
+                            <option value="Relatório">Relatório</option>
+                            <option value="Dataset">Dataset</option>
+                            <option value="Documento">Documento</option>
+                            <option value="Mídia">Mídia</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label for="descricao">Descrição / Resumo</label>
+                        <textarea id="descricao" rows="2" placeholder="Breve resumo do conteúdo processado..."></textarea>
+                    </div>
+                </div>
+                <button type="submit">Cadastrar Conteúdo</button>
+            </form>
+        </section>
+
+        <!-- Seção de Busca e Consulta -->
+        <section class="card">
+            <h2>Consulta de Conteúdos</h2>
+            <div class="search-bar">
+                <input type="text" id="inputBusca" placeholder="Busque por título ou categoria...">
+            </div>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Categoria</th>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaCorpo">
+                        <!-- Dados injetados via JavaScript -->
+                    </tbody>
+                </table>
+                <div id="estadoVazio" class="empty-state" style="display: none;">
+                    Nenhum conteúdo encontrado.
+                </div>
+            </div>
+        </section>
+    </div>
+
+   <!-- <link rel="stylesheet" href="G9-BR-Equipe-22\frontend\src\assets\js\script.js">-->
+    <script src="js\script.js"></script> 
+
+</body>
+</html>
