@@ -38,7 +38,7 @@ npm run preview   # serve a build localmente, para conferência
 Arquivo `.env` na raiz do frontend:
 
 ```
-VITE_API_URL=http://localhost:8080
+VITE_API_URL=http://64.181.163.68:8080
 ```
 
 Aponta para a URL base do backend. Ajuste conforme o ambiente (dev local, OCI, etc).
