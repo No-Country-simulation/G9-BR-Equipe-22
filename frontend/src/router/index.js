@@ -1,15 +1,17 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router' // Mudar para createWebHashHistory
 import ProcessarView from '../views/ProcessarView.vue'
 import HistoricoView from '../views/HistoricoView.vue'
 import DetalheView from '../views/DetalheView.vue'
 
+const routes = [
+  { path: '/', component: ProcessarView },
+  { path: '/historico', component: HistoricoView },
+  { path: '/conteudo/:id', component: DetalheView }
+]
+
 const router = createRouter({
-  history: createWebHistory(),
-  routes: [
-    { path: '/', name: 'processar', component: ProcessarView },
-    { path: '/historico', name: 'historico', component: HistoricoView },
-    { path: '/conteudo/:id', name: 'detalhe', component: DetalheView },
-  ],
+  history: createWebHashHistory(), // Ativar o Hash aqui
+  routes
 })
 
 export default router

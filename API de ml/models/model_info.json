@@ -1,0 +1,21 @@
+{
+  "model_name": "TechTagger",
+  "version": "2.0.0",
+  "algorithm": "TF-IDF + Calibrated LinearSVC",
+  "classes": [
+    "Backend",
+    "Cloud",
+    "Data Engineering",
+    "Data Science",
+    "Databases",
+    "DevOps",
+    "Frontend",
+    "Mobile"
+  ],
+  "n_features": 690,
+  "n_samples": 388,
+  "accuracy": 0.8717948717948718,
+  "f1_macro": 0.8671504127966977,
+  "description": "Classificação de conteúdo técnico com SVM Linear calibrado",
+  "technologies_dict": {}
+}

@@ -43,7 +43,7 @@ public class MLServiceClient {
                     .onStatus(HttpStatusCode::is5xxServerError, response ->
                             Mono.error(new MLServiceUnavailableException("Serviço de ML indisponível: " + response.statusCode())))
                     .bodyToMono(MLResponse.class)
-                    .timeout(Duration.ofSeconds(10))
+                    .timeout(Duration.ofSeconds(30))
                     .retryWhen(Retry.backoff(2, Duration.ofMillis(500))
                             .filter(this::isErroTransitorio)
                             .doBeforeRetry(sig -> log.warn("Tentando novamente chamada a ML API (tentativa {}): {}",

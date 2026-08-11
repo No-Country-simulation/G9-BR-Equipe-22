@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+
+    private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String, Object>> handleValidation(MethodArgumentNotValidException ex) {
@@ -45,6 +49,7 @@ public class GlobalExceptionHandler {
     }
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, Object>> handleGeneric(Exception ex) {
+        logger.error("Erro inesperado capturado pelo handleGeneric", ex);
         Map<String, Object> erro = new HashMap<>();
         erro.put("error", "Internal Server Error");
         erro.put("detail", "Erro inesperado. Contate o suporte se persistir.");
@@ -52,3 +57,4 @@ public class GlobalExceptionHandler {
     }
 
 }
+

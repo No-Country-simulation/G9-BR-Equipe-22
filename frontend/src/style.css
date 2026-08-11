@@ -60,3 +60,48 @@ body {
   height: 9px;
   border-radius: 999px;
 }
+.progress-track {
+  height: 5px;
+  background: var(--color-line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.chip-hover {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.chip-hover:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px -2px rgba(20, 23, 26, 0.15);
+  border-color: var(--color-accent);
+}
+.rel-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.rel-card:hover {
+  transform: translateX(2px);
+  box-shadow: 0 2px 10px -3px rgba(20, 23, 26, 0.12);
+}
+@keyframes result-pop {
+  0% { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.result-enter {
+  animation: result-pop 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(6px);
+}
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
+}
