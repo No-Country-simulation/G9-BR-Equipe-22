@@ -39,11 +39,22 @@ pip install -r requirements.txt
 jupyter notebook notebooks/
 ```
 
-## Métricas atuais do modelo
+## 🧠 Modelo de Machine Learning
 
+- **Algoritmo:** TF‑IDF (n‑grams 1–3) + Regressão Logística, otimizado por **GridSearchCV**
+- **Melhores hiperparâmetros:** `C=2.0`, `max_features=5000`, `ngram_range=(1,3)`
+- **Embeddings (recomendação):** sentence‑transformers `all-MiniLM-L6-v2`
+- **Keywords:** YAKE com fallback automático por TF‑IDF
+- **Dataset:** 1.520 artigos técnicos balanceados (Dev.to API), 8 categorias
+- **Protocolo de avaliação:** treino com tags como sinal auxiliar; **teste apenas com título + descrição** (sem vazamento)
+
+### 📊 Métricas (teste honesto)
 | Métrica | Valor |
 |---|---|
-| Amostras | 388 |
-| Categorias | 8 |
-| Acurácia (teste) | ~75,6% |
-| F1-score ponderado (teste) | ~76,1% |
+| **Accuracy** | **0.955** |
+| **F1 (weighted)** | 0.955 |
+| **F1 (macro)** | 0.955 |
+| **F1 (CV 5‑fold)** | 0.960 |
+
+### 🏷️ Categorias (F1 por classe)
+Mobile 0.99 · Cloud 0.99 · Data Science 0.97 · Frontend 0.96 · Backend 0.95 · Databases 0.94 · DevOps 0.93 · Data Engineering 0.91
