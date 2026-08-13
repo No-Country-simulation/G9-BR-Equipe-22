@@ -99,12 +99,13 @@ class MLService:
         return self.recomendar(query, top_n=top_n)
 
     def get_stats(self):
+        classes = self.info.get("classes", [])
         return {
             "total_content": len(self.metadata),
-            "n_categories": self.info.get("n_categories", 0),
-            "categories": self.info.get("categories", []),
-            "model_version": self.info.get("model_version", "1.0.0"),
-            "accuracy": self.info.get("accuracy_test", 0.0),
-            "f1_score": self.info.get("f1_weighted_test", 0.0),
+            "n_categories": len(classes),
+            "categories": classes,
+            "model_version": self.info.get("version", "1.0.0"),
+            "accuracy": self.info.get("accuracy", 0.0),
+            "f1_score": self.info.get("f1_macro", 0.0),
             "trained_at": self.info.get("trained_at", "")
         }
