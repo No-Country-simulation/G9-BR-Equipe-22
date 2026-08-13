@@ -1,0 +1,389 @@
+id,title,category,word_count,content_clean
+cnt_0000,Introduction to Spring Boot,Backend,26,introduct spring boot present basic concept creat rest api jav spring boot control serv depend inject
+cnt_0001,Criando APIs com FastAPI,Backend,25,cri api fastap aprend cri api rest modern rápid python fastap inclu valid pydant document automá swagg
+cnt_0002,Node.js e Express na prática,Backend,24,nod expres prát constru serv rot nod expres middlew rote trat err integr banc dad
+cnt_0003,Java e Spring MVC,Backend,22,jav spring mvc desenvolv aplic web jav spring mvc injeç depend cam serviç control rest
+cnt_0004,APIs REST com Django Rest Framework,Backend,21,api rest djang rest framework cri api robust segur djang rest framework serial viewset python
+cnt_0005,Autenticação JWT com Spring Security,Backend,19,autentic jwt spring secur implement autentic autor json web tok spring boot spring secur
+cnt_0006,Construindo microserviços com Spring Cloud,Backend,17,constru microserviç spring cloud introduç microserviç spring boot spring cloud gateway serv discoveri
+cnt_0007,API RESTful com Flask,Backend,17,api rest flask cri api simpl efici flask blueprint integr sqlalchemi
+cnt_0008,Validação de dados com Pydantic,Backend,20,valid dad pydant us pydant fastap valid request respons form automá tip
+cnt_0009,Injeção de Dependência no Spring,Backend,16,injeç depend spring entend ioc depend inject ecossistem spring framework anot
+cnt_0010,Criando um CRUD completo com FastAPI,Backend,24,cri crud complet fastap pass pass cri endpoint creat read updat delet fastap banc dad
+cnt_0011,Middlewares no Express.js,Backend,16,middlew expres funcion middlew nod expres cri middlew person
+cnt_0012,Exception Handling em APIs Java,Backend,18,except handl api jav trat glob exceç controlleradv spring boot retorn err padron
+cnt_0013,Documentação automática de APIs,Backend,12,document automá api ger document swagg openap automatic springdoc fastap
+cnt_0014,Versionamento de APIs REST,Backend,15,version api rest estratég version api uri version head queri paramet
+cnt_0015,REST vs GraphQL,Backend,18,rest graphql compar api rest graphql vantag desvant escolh cad abord backend
+cnt_0016,Spring Boot Actuator,Backend,16,spring boot actua monitor aplic spring boot actua health check métr endpoint gerenc
+cnt_0017,Criando webhooks,Backend,16,cri webhook implement consum webhook api notific temp real sistem
+cnt_0018,Rate limiting em APIs,Backend,16,rat limit api proteg api contr abus rat limit redi bucket middlew
+cnt_0019,Clean Architecture no backend,Backend,21,clean architectur backend organiz códig cam clean architectur domain driven design aplic jav python
+cnt_0020,Mensageria com RabbitMQ,Backend,13,mensag rabbitmq comunic assíncr serviç rabbitmq fil exchang consum
+cnt_0021,Testes de API com Postman e pytest,Backend,19,test api postman pytest estratég test autom api rest postman newman pytest
+cnt_0022,Caching com Redis no backend,Backend,18,cach redi backend melhor perform api cach distribu redi estratég invalid
+cnt_0023,Upload de arquivos em APIs,Backend,17,upload arqu api receb armazen arqu api multipart form dat valid object storag
+cnt_0024,Logs estruturados em aplicações,Backend,17,log estrutur aplic implement log estrutur json correl id nívei log backend
+cnt_0025,Paginação e filtros em APIs REST,Backend,17,pagin filtr api rest boa prát pagin orden filtr endpoint list
+cnt_0026,Hexagonal Architecture,Backend,14,hexagon architectur port adapt isol regr negóci framework infraestrut
+cnt_0027,gRPC na prática,Backend,14,grpc prát comunic alt perform microserviç grpc protocol buff
+cnt_0028,Background jobs com Celery,Backend,15,background job celeri process assíncron taref python celeri redi work
+cnt_0029,Spring Data JPA,Backend,15,spring dat jpa acess dad simplific spring dat jpa repositóri queri method
+cnt_0030,Autenticação OAuth2,Backend,12,autentic oauth implement oauth openid connect autentic deleg api
+cnt_0031,Health checks e readiness,Backend,15,health check readi endpoint live readi aplic contain kubernet
+cnt_0032,API Gateway pattern,Backend,13,api gateway pattern centraliz autentic rat limit rote api gateway
+cnt_0033,Validação de entrada no backend,Backend,17,valid entr backend sanit valid dad entr evit inject inconsist
+cnt_0034,Documentação viva de APIs,Backend,15,document viv api mant openap swagg sincron códig spring boot fastap
+cnt_0035,Arquitetura de microsserviços,Backend,16,arquitet microsserviç princípi microsserviç comunic síncr assíncr trad off relaç monólit
+cnt_0036,Circuit Breaker pattern,Backend,17,circuit break pattern aument resili api padr circuit break resili simil
+cnt_0037,Idempotência em APIs,Backend,15,idempot api garant requis repet ger efeit colater indesej backend
+cnt_0038,Event-driven architecture,Backend,13,event driven architectur constru sistem base event fil tópic consum desacopl
+cnt_0039,DTO e mapeamento de objetos,Backend,19,dto mape objet uso dto mapstruct model mapp separ entidad payload api
+cnt_0040,Soft delete e auditoria,Backend,14,soft delet audit implement exclus lógic trilh audit aplic backend
+cnt_0041,WebSockets no backend,Backend,15,websocket backend comunic bidirec temp real websocket spring boot fastap
+cnt_0042,Retry e timeout policies,Backend,15,retri timeout polici configur polít retri timeout fallback cham serviç
+cnt_0043,Multi-tenancy em APIs,Backend,14,mult tenanc api estratég mult tenant databas tenant schem tenant discrimin
+cnt_0044,OpenAPI first design,Backend,17,openap first design desenh contrat api prim openap ger códig part especific
+cnt_0045,Security headers em APIs,Backend,16,secur head api head seguranç cor csp hst proteç contr ataqu comun
+cnt_0046,Bulk operations em APIs,Backend,16,bulk oper api endpoint process lot boa prát perform valid
+cnt_0047,Domain Events,Backend,13,domain event public event domíni desacopl módul integr bound context
+cnt_0048,Testcontainers para testes de integração,Backend,16,testcontain test integr sub banc fil reai test integr testcontain
+cnt_0049,Feature flags no backend,Backend,12,featur flag backend liber funcional grad featur flag toggl
+cnt_0050,Contratos de API e versionamento semântico,Backend,16,contrat api version semân evolu api quebr client version deprec cl
+cnt_0051,Observabilidade em microsserviços,Backend,13,observ microsserviç correl id distribut trace log centr arquitet distribu
+cnt_0052,GraphQL server com Python,Backend,17,graphql serv python cri api graphql strawberri graphen integr banc dad
+cnt_0053,Validação assíncrona de regras de negócio,Backend,16,valid assíncr regr negóci separ valid síncr process long fil work
+cnt_0054,Padronização de erros em APIs,Backend,19,padron err api format únic err rfc códig mens detalh client
+cnt_0055,React Hooks Explained,Frontend,16,react hook explain understand usest useeffect usecontext custom hook react modern frontend develop
+cnt_0056,Introdução ao React,Frontend,15,introduç react compon prop stat jsx prim pass desenvolv frontend react
+cnt_0057,CSS moderno com Tailwind,Frontend,15,cs modern tailwind estiliz interfac rapid tailwind cs util first respons dark mod
+cnt_0058,Angular para iniciantes,Frontend,13,angul inici cri aplic angul typescript compon serv dat bind
+cnt_0059,Vue.js básico,Frontend,12,vue básic constru interfac inter vue composit api compon reat
+cnt_0060,Gerenciamento de estado com Redux,Frontend,19,gerenc est redux us redux toolkit react redux gerenci est glob aplic react
+cnt_0061,Next.js App Router,Frontend,16,next app rout cri aplic react full stack next app rout serv compon rot
+cnt_0062,TypeScript no Frontend,Frontend,16,typescript frontend benefíci us typescript react angul mai seguranç tip
+cnt_0063,Componentes reutilizáveis em React,Frontend,17,compon reutiliz react boa prát cri design syst compon reutiliz prop composit
+cnt_0064,Animações com Framer Motion,Frontend,15,anim fram motion adicion anim flu inter aplic react fram motion
+cnt_0065,Consumindo APIs no Frontend,Frontend,18,consum api frontend requis http fetch axi trat load err react
+cnt_0066,CSS Grid e Flexbox na prática,Frontend,17,cs grid flexbox prát layout modern respons cs grid flexbox framework
+cnt_0067,Acessibilidade em aplicações web,Frontend,15,acessibil aplic web prát semân html ari label naveg tecl
+cnt_0068,React Query para data fetching,Frontend,17,react queri dat fetch gerenci cach load sincron dad serv tanstack queri
+cnt_0069,Styled Components vs Tailwind,Frontend,14,style compon tailwind compar cs util first cs desenvolv react modern
+cnt_0070,React Server Components,Frontend,17,react serv compon entend serv compon react next mud dat fetch
+cnt_0071,Estado local vs global,Frontend,15,est local glob us usest context api zustand redux frontend modern
+cnt_0072,Performance em React,Frontend,15,perform react memoiz react mem usem usecallback cod split app rápid
+cnt_0073,Formulários com React Hook Form,Frontend,17,formul react hook form cri formul performá valid react hook form zod
+cnt_0074,Design System na prática,Frontend,18,design syst prát cri mant design syst compon reutiliz tok design
+cnt_0075,Testes de componentes com Testing Library,Frontend,19,test compon test librari test compon react form centr usu test librari jest
+cnt_0076,Roteamento no frontend,Frontend,13,rote frontend client sid rout react rout app rout next
+cnt_0077,Acessibilidade (a11y) avançada,Frontend,14,acessibil avanç foc gerenci liv region contr naveg tecl spa
+cnt_0078,Lazy loading de componentes,Frontend,13,lazi load compon carreg sob demand react lazi suspens dynam import
+cnt_0079,CSS Modules vs Styled Components,Frontend,18,cs modul style compon escop estil frontend compar cs modul style compon tailwind
+cnt_0080,Gerenciamento de tema (dark mode),Frontend,16,gerenc tem dark mod implement dark mod tem customiz cs variabl context
+cnt_0081,Web Vitals e performance web,Frontend,17,web vital perform web lcp fid cl otimiz cor web vital aplic frontend
+cnt_0082,Integração com APIs REST no frontend,Frontend,18,integr api rest frontend padr dat fetch trat err retri cach client
+cnt_0083,Micro frontends,Frontend,12,micr frontend arquitet micr frontend faz sent princip abord
+cnt_0084,Animações com CSS e JS,Frontend,15,anim cs trans keyfram bibliotec anim interfac flu
+cnt_0085,PWA - Progressive Web Apps,Frontend,15,pwa progress web app transform aplic web instal serv work manifest
+cnt_0086,Gerenciamento de erros no UI,Frontend,17,gerenc err err boundari react padr fallback falh interfac
+cnt_0087,Storybook para componentes,Frontend,10,storybook compon document test compon isolad storybook
+cnt_0088,SEO em aplicações React,Frontend,16,seo aplic react met tag ssr ssg next melhor index busc
+cnt_0089,Consumindo GraphQL no frontend,Frontend,15,consum graphql frontend apoll client urql queri mutat cach graphql
+cnt_0090,Arquitetura frontend moderna,Frontend,14,arquitet frontend modern organiz past featur base structur separ respons frontend
+cnt_0091,Server Side Rendering vs CSR,Frontend,20,serv sid render csr diferenç ssr ssg isr client sid render impact seo perform
+cnt_0092,Estado do servidor com React Query,Frontend,16,est serv react queri cach revalid mutat est load tanstack queri
+cnt_0093,Acessibilidade em formulários,Frontend,15,acessibil formul label mens err foc leit tel formul web
+cnt_0094,Code splitting avançado,Frontend,17,cod split avanç divid bundl rot compon reduz temp carreg inic
+cnt_0095,Gerenciamento de formulários complexos,Frontend,14,gerenc formul complex formul mult step valid condic perform react hook form
+cnt_0096,Design tokens,Frontend,14,design tok centraliz cor espaç tipograf design tok design syst
+cnt_0097,Testes end-to-end com Cypress,Frontend,13,test end end cypres automatiz flux crít usu cypres playwright
+cnt_0098,Otimização de imagens no frontend,Frontend,16,otimiz imag frontend lazi load srcset format modern cdm imag lev
+cnt_0099,Internacionalização (i18n),Frontend,16,internacion suport múltipl idiom bibliotec format dat númer
+cnt_0100,Estado de UI vs estado de domínio,Frontend,19,est est domíni separ est interfac modai tab est negóci aplic
+cnt_0101,Web Components,Frontend,12,web compon cri compon reutiliz web compon integr framework
+cnt_0102,Hydration e seus problemas,Frontend,16,hydrat problem entend hydrat react next evit mismatch degrad perform
+cnt_0103,Animações orientadas a gestos,Frontend,16,anim orient gest inter avanç gest anim fram motion bibliotec simil
+cnt_0104,Monitoramento de erros no frontend,Frontend,15,monitor err frontend captur exceç perform ferrament sentri client
+cnt_0105,Atomic Design na prática,Frontend,14,atom design prát aplic atom molecul organ templat construç interfac
+cnt_0106,CSS performance,Frontend,14,cs perform reduz cs utiliz critic cs impact estil render
+cnt_0107,Autenticação no frontend,Frontend,15,autentic frontend flux login armazen tok refresh token proteç rot
+cnt_0108,Microinterações,Frontend,12,microinter pequen anim feedback visuai melhor experi usu
+cnt_0109,Bundlers modernos,Frontend,13,bundl modern vit webpack esbuild diferenç impact experi desenvolv
+cnt_0110,Flutter widgets,Mobile,13,flutt widget constru interfac mobil flutt dart statelesswidget statefulwidget composit
+cnt_0111,React Native na prática,Mobile,14,react nativ prát desenvolv multiplataform react nativ naveg compon nativ estil
+cnt_0112,Kotlin para Android,Mobile,14,kotlin android cri aplic android nativ kotlin activ fragment jetpack compos
+cnt_0113,SwiftUI basics,Mobile,14,swiftu basic introduç desenvolv io swift swiftu view stat naveg
+cnt_0114,Navegação no Flutter,Mobile,16,naveg flutt gerenc rot naveg tel navig rout flutt
+cnt_0115,Estado global no React Native,Mobile,18,est glob react nativ context api zustand redux gerenci est app react nativ
+cnt_0116,Publicando app na Play Store,Mobile,21,public app play stor pass pass ger bundl public aplic android googl play stor
+cnt_0117,Jetpack Compose fundamentos,Mobile,13,jetpack compos fundament declar android jetpack compos recompos tem
+cnt_0118,Acesso a recursos nativos,Mobile,16,acess recurs nativ acess câm gp armazen local flutt react nativ
+cnt_0119,Animações em Flutter,Mobile,12,anim flutt cri anim suav animationcontrol tween implicit anim
+cnt_0120,Firebase no Mobile,Mobile,16,firebas mobil integr autentic firestor cloud messag app flutt react nativ
+cnt_0121,Performance em apps mobile,Mobile,17,perform app mobil dic otimiz perform lazi load reduç rebuild flutt
+cnt_0122,Arquitetura de apps Flutter,Mobile,14,arquitet app flutt organiz projet flutt clean architectur repositori stat manag
+cnt_0123,State management com Provider e Riverpod,Mobile,16,stat manag provid riverpod gerenci est flutt provid riverpod boa prát
+cnt_0124,Navegação no React Native,Mobile,14,naveg react nativ react navig stack tab draw navig aplic multiplataform
+cnt_0125,Push notifications,Mobile,13,push notif implement notific push firebas cloud messag android io
+cnt_0126,Armazenamento local no mobile,Mobile,13,armazen local mobil asyncstorag hiv sharedprefer sqlit app mobil
+cnt_0127,Integração com APIs no Flutter,Mobile,18,integr api flutt consum api rest dio http packag trat err intercep
+cnt_0128,Testes em Flutter,Mobile,13,test flutt unit test widget test integr test ecossistem flutt
+cnt_0129,Publicação na App Store,Mobile,17,public app stor process build certific submiss app io appl app stor
+cnt_0130,Deep linking em apps,Mobile,16,deep link app configur deep link univers link abr tel específ aplic
+cnt_0131,Animações complexas no Flutter,Mobile,14,anim complex flutt her anim implicit anim custom paint ui avanç
+cnt_0132,Acesso a sensores do dispositivo,Mobile,14,acess sensor disposi utiliz gp acelerômetr câm biometr aplic mobil
+cnt_0133,CI/CD para apps mobile,Mobile,14,app mobil automatiz build distribu fastlan codemag github action
+cnt_0134,Offline first no mobile,Mobile,13,offlin first mobil estratég sincron funcion offlin aplic móvei
+cnt_0135,Kotlin Multiplatform,Mobile,13,kotlin multiplatform compartilh lógic negóci android io kotlin multiplatform
+cnt_0136,Performance e memory leaks,Mobile,17,perform memori leak detect corrig memori leak jank app flutt react nativ
+cnt_0137,Clean Architecture no Flutter,Mobile,13,clean architectur flutt separ present domain dat aplic flutt escal
+cnt_0138,Gerenciamento de estado com Bloc,Mobile,14,gerenc est bloc implement bloc pattern flux previs app flutt
+cnt_0139,Performance no React Native,Mobile,17,perform react nativ otimiz list imag pont nativ evit trav app react nativ
+cnt_0140,Build flavors e ambientes,Mobile,16,build flav ambi configur ambi dev stage produç app android io
+cnt_0141,Autenticação biométrica,Mobile,14,autentic biométr login digit fac aplic mobil plugin nativ
+cnt_0142,Sincronização offline,Mobile,12,sincron offlin fil sincron conflit estratég offlin first app móvei
+cnt_0143,Deep links e app links,Mobile,18,deep link app link abr tel específ app part url campanh market
+cnt_0144,Widgets personalizados no Flutter,Mobile,13,widget person flutt cri compon reutiliz custom paint ui diferenci
+cnt_0145,Gerenciamento de permissões,Mobile,12,gerenc permiss solicit trat permiss câm local notific
+cnt_0146,Crash reporting mobile,Mobile,13,crash report mobil captur crash anr firebas crashlyt ferrament simil
+cnt_0147,Animações de transição entre telas,Mobile,16,anim trans tel her widget share element transit naveg flu app mobil
+cnt_0148,Publicação automatizada de apps,Mobile,15,public autom app fastlan assin version envi build loj
+cnt_0149,Acessibilidade em apps mobile,Mobile,16,acessibil app mobil label acessibil contr naveg leit tel mobil
+cnt_0150,Integração com mapas,Mobile,16,integr map exib map marc rot googl map mapbox app mobil
+cnt_0151,Tamanho do app e otimização,Mobile,19,tamanh app otimiz reduz tamanh apk aab ipa tre shake asset otimiz
+cnt_0152,OCI Object Storage,Cloud,19,oci object storag us oracl cloud infrastructur object storag armazen arqu backup model machin learn
+cnt_0153,Introdução ao Docker,Cloud,13,introduç dock contain dockerfil imag dock compos empacot aplic nuv
+cnt_0154,Kubernetes fundamentals,Cloud,12,kubernet fundament orquestr contain kubernet pod deploy serv configmap
+cnt_0155,AWS S3 e EC2,Cloud,17,aw armazen objet comput amazon web serv
+cnt_0156,Oracle Cloud Infrastructure overview,Cloud,16,oracl cloud infrastructur overview serviç princip oci comput object storag autonom databas network iam
+cnt_0157,Deploy de aplicações na OCI,Cloud,19,deploy aplic oci deploy api inst comput oracl cloud infrastructur
+cnt_0158,Buckets e pre-authenticated requests,Cloud,18,bucket pre authent request gerenci acess arqu oci object storag par polici iam
+cnt_0159,Serverless com OCI Functions,Cloud,17,serverles oci function cri funç serverles oracl cloud process event taref sob demand
+cnt_0160,Redes na nuvem (VCN),Cloud,16,red nuv vcn configur virtual cloud network subnet secur list rout tabl oci
+cnt_0161,Comparativo AWS vs OCI vs Azure,Cloud,17,compar aw oci azur princip diferenç mai prov nuv públic merc
+cnt_0162,Armazenando modelos de ML na nuvem,Cloud,19,armazen model nuv boa prát version serv model machin learn object storag
+cnt_0163,Load Balancer na OCI,Cloud,16,load balanc oci distribu tráfeg múltipl inst load balanc oracl cloud
+cnt_0164,Autonomous Database na prática,Cloud,15,autonom databas prát cri conect banc autonom transact process oci
+cnt_0165,Containers na Oracle Cloud,Cloud,15,contain oracl cloud contain instanc oke oracl kubernet engin rod contain
+cnt_0166,IAM e segurança na nuvem,Cloud,17,iam seguranç nuv polít acess grup usu least privileg oracl cloud infrastructur
+cnt_0167,Object Storage na prática,Cloud,20,object storag prát cri bucket faz upload download arqu gerenci lifecycl polici oci object storag
+cnt_0168,Compute Instances na OCI,Cloud,14,comput instanc oci provision máquin virtuai shap imag conect oracl cloud
+cnt_0169,Networking básico na nuvem,Cloud,16,network básic nuv vcn subnet públic priv internet gateway nat gateway oci
+cnt_0170,IAM policies na Oracle Cloud,Cloud,17,iam polici oracl cloud cri polít acess granul usu grup recurs oci
+cnt_0171,Deploy de API em cloud,Cloud,21,deploy api cloud pass pass hosped api fastap spring boot inst oci comput
+cnt_0172,Armazenando modelos ML no Object Storage,Cloud,18,armazen model object storag version download model joblib pickl part bucket nuv
+cnt_0173,Containers na OCI,Cloud,15,contain oci rod contain contain instanc introduç oracl kubernet engin oke
+cnt_0174,Serverless na Oracle Cloud,Cloud,17,serverles oracl cloud oci function us funç serverles deploy funç python
+cnt_0175,Bancos de dados gerenciados na nuvem,Cloud,17,banc dad gerenci nuv autonom databas mysql heatwav vantag banc gerenci oci
+cnt_0176,Backup e disaster recovery,Cloud,15,backup disast recoveri estratég backup volum object storag banc nuv
+cnt_0177,Observabilidade na nuvem,Cloud,12,observ nuv monitor recurs oci monitor log alarm
+cnt_0178,Custos na cloud,Cloud,16,cust cloud estim monitor otimiz cust comput storag red oci
+cnt_0179,Multi-cloud e hybrid cloud,Cloud,16,mult cloud hybrid cloud conceit arquitet mult cloud hybrid cloud oracl outr prov
+cnt_0180,Security lists e NSGs,Cloud,17,secur list nsg control tráfeg red secur list network secur group oci
+cnt_0181,Load balancing na nuvem,Cloud,15,load balanc nuv distribu carg inst flexibl load balanc oracl cloud
+cnt_0182,Infraestrutura como código na OCI,Cloud,15,infraestrut códig oci provision recurs oracl cloud terraform oci resourc manag
+cnt_0183,Armazenamento de blocos vs objetos,Cloud,17,armazen bloc objet diferenç block volum object storag us cad
+cnt_0184,Conectando aplicações à Autonomous DB,Cloud,17,conect aplic autonom wallet connect string boa prát conex segur autonom databas
+cnt_0185,Escalabilidade na nuvem,Cloud,13,escal nuv escal vertic horizont aplic autosc load balanc
+cnt_0186,Boas práticas de arquitetura cloud,Cloud,14,boa prát arquitet cloud alt disponibil desacopl seguranç resili soluç cloud nativ
+cnt_0187,Arquitetura de referência na OCI,Cloud,18,arquitet refer oci boa prát arquitet aplic web api oracl cloud infrastructur
+cnt_0188,Object Storage lifecycle policies,Cloud,14,object storag lifecycl polici mov objet automatic ti armazen reduz cust
+cnt_0189,Pre-Authenticated Requests,Cloud,15,pre authent request ger url temporár segur upload download oci object storag
+cnt_0190,Bastion e acesso seguro,Cloud,14,bastion acess segur acess inst priv form segur oci bastion serv
+cnt_0191,Autoscaling na Oracle Cloud,Cloud,14,autosc oracl cloud configur polít autosc base cpu métr custom
+cnt_0192,Cloud Shell e automação,Cloud,16,cloud shell autom oci cloud shell cli administr recurs nuv rapid
+cnt_0193,Tags e organização de recursos,Cloud,17,tag organiz recurs organiz cust governanç tag defin fre form tag oci
+cnt_0194,Vault e gerenciamento de chaves,Cloud,14,vault gerenc chav armazen segred chav criptograf oci vault
+cnt_0195,Eventos e automação na nuvem,Cloud,16,event autom nuv reag event recurs oci event serv function
+cnt_0196,Conectividade híbrida,Cloud,12,conect híbr fastconnect vpn sit sit lig datacent premis oci
+cnt_0197,Container Registry na OCI,Cloud,14,contain registri oci armazen version imag dock oracl cloud infrastructur registri
+cnt_0198,Monitoramento de aplicações na nuvem,Cloud,15,monitor aplic nuv cri alarm dashboard alert oci monitor notif
+cnt_0199,Backup de Compute e Block Volumes,Cloud,15,backup comput block volum snapshot backup agend estratég recuper desastr
+cnt_0200,Políticas de IAM avançadas,Cloud,14,polít iam avanç escrev polici cond compart least privileg oci
+cnt_0201,Deploy de modelos de ML na nuvem,Cloud,17,deploy model nuv hosped serv model trein comput object storag
+cnt_0202,Redes privadas e service gateway,Cloud,16,red priv serv gateway acess serviç oracl pass internet públic serv gateway
+cnt_0203,Alta disponibilidade em cloud,Cloud,14,alt disponibil cloud distribu recurs avail domain fault domain
+cnt_0204,Otimização de custos OCI,Cloud,15,otimiz cust oci rightsiz schedul shutdown escolh shap econom nuv
+cnt_0205,Logging centralizado na OCI,Cloud,15,log centr oci colet analis log aplic infraestrut oci log
+cnt_0206,Infraestrutura imutável,Cloud,13,infraestrut imut conceit infraestrut imut aplic inst contain nuv
+cnt_0207,Machine Learning com Scikit-learn,Data Science,18,machin learn scikit classific regress scikit cri pipelin trein avali model
+cnt_0208,Análise de dados com Pandas,Data Science,18,anális dad pand manipul limp transform dad tabul bibliotec pand python
+cnt_0209,Introdução a TF-IDF,Data Science,17,introduç idf func idf aplic classific text busc nlp
+cnt_0210,Modelos de classificação,Data Science,16,model classific logist regress random forest svm métr avali problem classific
+cnt_0211,Pré-processamento de texto para NLP,Data Science,17,pré process text nlp limp token remoç stopword stem lemmat projet nlp
+cnt_0212,Métricas de avaliação de modelos,Data Science,17,métr avali model accuraci precis recal scor matriz confus us cad
+cnt_0213,Pipeline de Machine Learning,Data Science,15,pipelin machin learn cri pipelin complet scikit pré process model avali
+cnt_0214,Overfitting e Underfitting,Data Science,14,overfit underfit entend problem gener model técn regular
+cnt_0215,Feature Engineering básico,Data Science,17,featur engin básic cri seleç featur melhor perform model machin learn
+cnt_0216,Validação cruzada,Data Science,15,valid cruz fold cros valid usá avali model form robust
+cnt_0217,Classificação de textos com Python,Data Science,17,classific text python text brut model idf logist regress categor document
+cnt_0218,Visualização de dados com Seaborn,Data Science,15,visual dad seaborn cri gráf estatís anális exploratór matplotlib seaborn
+cnt_0219,Serialização de modelos com joblib,Data Science,18,serial model joblib salv carreg model trein machin learn joblib pickl
+cnt_0220,Tratamento de dados desbalanceados,Data Science,13,trat dad desbalance técn clas weight smot undersampl dataset desbalance
+cnt_0221,Introdução a NLP,Data Science,12,introduç nlp conceit fundament process lingu natur bag word
+cnt_0222,Regressão logística explicada,Data Science,18,regress logís explic func regress logís interpret coefici uso classific binár multicl
+cnt_0223,TF-IDF na prática,Data Science,13,idf prát implement idf scikit represent text trein classific
+cnt_0224,Matriz de confusão detalhada,Data Science,18,matriz confus detalh interpret tru posit fals posit precis recal part matriz confus
+cnt_0225,Balanceamento de classes,Data Science,13,balance cl clas weight oversampl undersampl problem classific desbalance
+cnt_0226,Cross-validation na prática,Data Science,13,cros valid prát aplic fold stratifiedkfold avali model form confi
+cnt_0227,Pipeline do scikit-learn,Data Science,14,pipelin scikit encapsul vector classific pipelin trein deploy
+cnt_0228,Feature importance,Data Science,13,featur import entend quai palavr featur influenc pred model
+cnt_0229,Limpeza de dados textuais,Data Science,14,limp dad text normal remoç stopword pontu ruíd text técn
+cnt_0230,Métricas para classificação multiclasse,Data Science,17,métr classific multicl macr weight micr diferenç us cad
+cnt_0231,Overfitting em modelos de texto,Data Science,15,overfit model text detect evit overfit classific base idf
+cnt_0232,Joblib vs Pickle,Data Science,13,joblib pickl serializ model machin learn form efici joblib
+cnt_0233,Análise exploratória de textos,Data Science,15,anális exploratór text word cloud frequ term distribu tamanh document
+cnt_0234,Train test split estratificado,Data Science,15,train test split estratific import parâmetr stratifi mant proporç cl split
+cnt_0235,Classificação de documentos técnicos,Data Science,15,classific document técn constru classific categor técn idf logist regress
+cnt_0236,Extração de palavras-chave,Data Science,14,extr palavr chav técn simpl keyword extract idf sc import
+cnt_0237,Pré-processamento bilíngue,Data Science,13,pré process bilíng trat text portugu ingl pipelin nlp
+cnt_0238,Avaliação qualitativa do modelo,Data Science,13,avali qualit model além métr analis err exempl mal classific
+cnt_0239,N-grams em NLP,Data Science,12,gr nlp unigram bigram tfidfvector captur context
+cnt_0240,Baseline models,Data Science,12,baselin model import cri model baselin simpl ant soluç complex
+cnt_0241,Reproducibilidade em DS,Data Science,12,reproducibil fix random stat version dad model exper reproduz
+cnt_0242,Seleção de modelos de classificação,Data Science,18,seleç model classific compar logist regress svm random forest naiv bay problem text
+cnt_0243,Curva ROC e AUC,Data Science,15,curv roc auc avali classific bin curv roc áre sob curv
+cnt_0244,Grid Search e hyperparameter tuning,Data Science,13,grid search hyperparamet tune otimiz hiperparâmetr gridsearchcv randomizedsearchcv scikit
+cnt_0245,Vetorização de texto além do TF-IDF,Data Science,16,vetor text além idf bag word idf introduç embed classific text
+cnt_0246,Pipeline de inferência em produção,Data Science,17,pipelin infer produç text brut pred limp vetor model seri api
+cnt_0247,Erros de classificação e análise de casos,Data Science,17,err classific anális cas analis fals posi fals nega melhor model
+cnt_0248,Stopwords personalizadas,Data Science,12,stopword person cri list stopword específ domíni técn bilíng
+cnt_0249,Stratified sampling,Data Science,14,stratifi sampl garant representat cl amostr split trein test
+cnt_0250,Métricas de negócio vs métricas técnicas,Data Science,19,métr negóci métr técn alinh accuraci impact real soluç usu
+cnt_0251,Versionamento de datasets e modelos,Data Science,17,version dataset model boa prát version dad trein artefat machin learn
+cnt_0252,Explicabilidade simples de modelos,Data Science,15,explic simpl model inspecion coefici regress logís palavr import cl
+cnt_0253,Detecção de idioma,Data Science,15,detecç idiom identific text portugu ingl ant process
+cnt_0254,Data leakage em NLP,Data Science,16,dat leakag nlp evit vaz inform trein test pipelin text
+cnt_0255,Avaliação com cross-validation estratificada,Data Science,13,avali cros valid estratific stratifiedkfold métr confi dataset desbalance
+cnt_0256,Serialização completa do pipeline,Data Science,15,serial complet pipelin salv vector model metad junt joblib deploy
+cnt_0257,Baseline com DummyClassifier,Data Science,14,baselin dummyclassifi cri baselin ingênu sab model real aprend
+cnt_0258,Limpeza de ruído em textos técnicos,Data Science,16,limp ruíd text técn remov códig log trech irrelev document tutor
+cnt_0259,Aumento de dados textuais,Data Science,15,aument dad text técn simpl dat augment text sinôn back translat parafras
+cnt_0260,Monitoramento de modelos em produção,Data Science,17,monitor model produç acompanh drift dad qued perform classific produç
+cnt_0261,Documentação de experimentos de DS,Data Science,18,document exper registr hipótes métr decis notebook relatóri ciênc dad
+cnt_0262,ETL com Python,Data Engineering,16,etl python cri pipelin extr transform carg dad python pand
+cnt_0263,Apache Airflow basics,Data Engineering,15,apach airflow basic orquestr pipelin dad apach airflow dag oper schedul
+cnt_0264,Introdução ao Apache Spark,Data Engineering,15,introduç apach spark process distribu grand volum dad spark pyspark
+cnt_0265,Data Lakes vs Data Warehouses,Data Engineering,18,dat lak dat warehous diferenç dat lak dat warehous lakehous arquitet dad modern
+cnt_0266,Batch vs Streaming,Data Engineering,16,batch stream process lot versu process temp real kafk spark stream
+cnt_0267,Construindo um pipeline de dados,Data Engineering,15,constru pipelin dad arquitet pipelin complet ingest transform qual carg
+cnt_0268,dbt para transformação de dados,Data Engineering,16,dbt transform dad dbt dat build tool transform sql version test
+cnt_0269,Qualidade de dados,Data Engineering,15,qual dad valid test qual monitor dad pipelin engenh
+cnt_0270,Ingestão de dados com Python,Data Engineering,17,ingest dad python lend dad api csv banc relac grav destin divers
+cnt_0271,Particionamento e performance,Data Engineering,14,particion perform técn particion dad melhor perform dat lak
+cnt_0272,Apache Kafka fundamentos,Data Engineering,15,apach kafk fundament mensag stream event apach kafk tópic produc consum
+cnt_0273,Orquestração de workflows,Data Engineering,14,orquestr workflow compar airflow prefect dagst orquestr pipelin dad
+cnt_0274,Arquitetura de um Data Pipeline,Data Engineering,13,arquitet dat pipelin compon essenc ingest valid transform armazen orquestr
+cnt_0275,ETL vs ELT,Data Engineering,15,etl elt diferenç etl elt impact arquitet modern dad
+cnt_0276,Orquestração com Airflow,Data Engineering,13,orquestr airflow cri dag defin depend agend pipelin apach airflow
+cnt_0277,Qualidade de dados em pipelines,Data Engineering,18,qual dad pipelin test null duplic rang schem flux engenh dad
+cnt_0278,Ingestão de APIs para Data Lake,Data Engineering,19,ingest api dat lak extra dad api rest grav format particion object storag
+cnt_0279,"Formatos de arquivo: CSV, Parquet e JSON",Data Engineering,19,format arqu csv parquet json us cad format pipelin dad impact perform
+cnt_0280,Particionamento de dados,Data Engineering,14,particion dad estratég part dat categor consult efici
+cnt_0281,Processamento batch com Python,Data Engineering,16,process batch python lend transform grav grand volum dad pand pyspark
+cnt_0282,Data contracts,Data Engineering,13,dat contract defin contrat dad produt consum evit quebr
+cnt_0283,Monitoramento de pipelines,Data Engineering,12,monitor pipelin alert sla observ flux dad crít
+cnt_0284,CDC - Change Data Capture,Data Engineering,17,cdc chang dat captur captur mudanç banc relac aliment pipelin temp quas real
+cnt_0285,Transformações com SQL,Data Engineering,14,transform sql sql dbt transform version test warehous
+cnt_0286,Idempotência em pipelines,Data Engineering,12,idempot pipelin garant reprocess ger dad duplic inconsist
+cnt_0287,Data Lake na OCI,Data Engineering,15,dat lak oci mont dat lak simpl object storag past particion
+cnt_0288,Agendamento e retries,Data Engineering,12,agend retri configur retri timeout backfil orquestr dad
+cnt_0289,Medallion architecture,Data Engineering,13,medallion architectur cam bronz silv gold organiz dad lakehous
+cnt_0290,Ingestão incremental,Data Engineering,12,ingest increment estratég carg increment dat atual watermark
+cnt_0291,Schema evolution,Data Engineering,12,schem evolut lid mudanç schem pipelin quebr consum
+cnt_0292,Data quality frameworks,Data Engineering,13,dat qualiti framework implement check qual great expect valid custom
+cnt_0293,Orquestração de pipelines complexos,Data Engineering,13,orquestr pipelin complex dag depend branch sensor apach airflow
+cnt_0294,Processamento paralelo com Python,Data Engineering,14,process paralel python multiprocess job paralel aceler transform dad
+cnt_0295,Catalogação de dados,Data Engineering,13,catalog dad import dat catalog descobert governanç dataset
+cnt_0296,SLAs de dados,Data Engineering,14,sla dad defin monitor praz entreg atual dataset crít
+cnt_0297,Carga de dados no Object Storage,Data Engineering,19,carg dad object storag grav arqu particion bucket zon stage dat lak
+cnt_0298,Transformações idempotentes,Data Engineering,12,transform idempot projet step pipelin pod reexecut seguranç
+cnt_0299,Backfill de dados históricos,Data Engineering,14,backfil dad histór reprocess períod antig impact carg diár produç
+cnt_0300,Linha do tempo de um pipeline,Data Engineering,16,linh temp pipelin agend materi etap pont falh comun
+cnt_0301,Integração com bancos relacionais,Data Engineering,13,integr banc relac extr efici tabel queri increment particion
+cnt_0302,Observabilidade de dados,Data Engineering,15,observ dad métr volum lat qual pipelin engenh dad
+cnt_0303,Padrões de arquivo em Data Lakes,Data Engineering,18,padr arqu dat lak organiz past dat orig event facil consum
+cnt_0304,CI/CD com GitHub Actions,DevOps,16,github action automatiz build test deploy github action pipelin
+cnt_0305,Terraform na prática,DevOps,15,terraform prát infraestrut códig terraform provision recurs nuv form declar
+cnt_0306,Docker e Kubernetes juntos,DevOps,16,dock kubernet junt contain clust boa prát devop dock kubernet
+cnt_0307,Dockerfile otimizado,DevOps,11,dockerfil otimiz boa prát cri dockerfil mult stag lev segur
+cnt_0308,Monitoramento com Prometheus,DevOps,13,monitor prometh colet métr aplic infraestrut prometh graf
+cnt_0309,GitFlow e branching strategies,DevOps,14,gitflow branch strategi estratég branch gitflow trunk base develop convent commit
+cnt_0310,Infrastructure as Code,DevOps,13,infrastructur cod conceit iac compar terraform pulum cloudform
+cnt_0311,Deploy contínuo na prática,DevOps,12,deploy contínu prát implement continu deploy test autom rollback
+cnt_0312,Secrets management,DevOps,13,secret manag gerenci segred credenc form segur pipelin aplic
+cnt_0313,Observabilidade moderna,DevOps,14,observ modern log métr trac trê pil observ sistem distribu
+cnt_0314,Kubernetes Deployments,DevOps,13,kubernet deploy cri atualiz escal aplic kubernet deploy serv
+cnt_0315,Automação de infraestrutura,DevOps,13,autom infraestrut ansibl terraform junt provis configur serv
+cnt_0316,Pipeline CI/CD completo,DevOps,14,pipelin complet build test anális códig deploy autom github action
+cnt_0317,Docker multi-stage builds,DevOps,14,dock mult stag build reduz tamanh imag dock build mult stag boa prát
+cnt_0318,Kubernetes Services e Ingress,DevOps,14,kubernet serv ingres exp aplic clust clusterip nodeport loadbalanc ingres
+cnt_0319,Infraestrutura como código com Terraform,DevOps,16,infraestrut códig terraform cri version infraestrut nuv form declar reprodut
+cnt_0320,Estratégias de deploy,DevOps,14,estratég deploy blu green canari roll updat liber vers baix risc
+cnt_0321,Observabilidade com logs e métricas,DevOps,15,observ log métr centraliz log métr troubleshoot aplic produç
+cnt_0322,Gerenciamento de secrets,DevOps,16,gerenc secret vault secret manag exp credenc códig pipelin
+cnt_0323,Healthcheck em containers,DevOps,13,healthcheck contain configur healthcheck dock prob live readi kubernet
+cnt_0324,Versionamento semântico,DevOps,13,version semân aplic semv api artefat comunic cl mudanç
+cnt_0325,Automação de testes no pipeline,DevOps,15,autom test pipelin execut test unit integr lint automatic cad commit
+cnt_0326,GitHub Actions na prática,DevOps,14,github action prát cri workflow yaml aplic python jav
+cnt_0327,Container registry,DevOps,13,contain registri public version imag dock registri priv nuv
+cnt_0328,Rollback e recuperação,DevOps,13,rollback recuper estratég rollback rápid deploy quebr produç
+cnt_0329,Configuração por ambiente,DevOps,16,configur ambi gerenci config dev hml prod vari ambi secret
+cnt_0330,Cultura DevOps,DevOps,13,cult devop colabor dev op autom melh contínu entreg
+cnt_0331,GitOps na prática,DevOps,15,gitop prát gerenci deploy infraestrut atravé repositóri git font verdad
+cnt_0332,Pipeline de segurança (DevSecOps),DevOps,15,pipelin seguranç devsecop inclu sast dast scan vulner pipelin
+cnt_0333,Policy as Code,DevOps,12,polici cod valid configur infraestrut seguranç polít autom
+cnt_0334,Blue-green deploy detalhado,DevOps,13,blu green deploy detalh implement blu green deploy reduz downtim risc produç
+cnt_0335,Canary releases,DevOps,15,canari releas liber nov vers pequen porcent usu ant rollout total
+cnt_0336,Infraestrutura efêmera,DevOps,12,infraestrut efêm ambi tempor test cri destru automatic pipelin
+cnt_0337,"SLIs, SLOs e SLAs",DevOps,16,slis slo sla defin indic obje nível serviç aplic produç
+cnt_0338,ChatOps,DevOps,13,chatop oper deploy incid part ferrament chat autom
+cnt_0339,Immutable artifacts,DevOps,9,immut artifact ger artefat imut version deploy reproduz
+cnt_0340,Post-mortems sem culpa,DevOps,15,post mort culp cult aprend anális incid foc melh process
+cnt_0341,Configuração de ambientes com variáveis,DevOps,13,configur ambi vari fac app configur via environ variabl secret
+cnt_0342,Scan de imagens Docker,DevOps,13,scan imag dock detect vulner imag contain ant deploy
+cnt_0343,Progressive delivery,DevOps,14,progress deliveri técn entreg progress featur flag canari test produç
+cnt_0344,Backup de configurações de pipeline,DevOps,15,backup configur pipelin version workflow script autom repositóri
+cnt_0345,Métricas de DevOps (DORA),DevOps,18,métr devop dor frequenc deploy lead tim mttr chang failur rat indic perform
+cnt_0346,PostgreSQL avançado,Databases,14,postgresql avanç consult complex índic window function cte otimiz perform postgresql
+cnt_0347,MongoDB para iniciantes,Databases,16,mongodb inici banc dad nosql orient document mongodb collect document queri
+cnt_0348,SQL fundamentals,Databases,15,sql fundament com essenc sql select join group insert updat delet
+cnt_0349,Oracle Database e PL/SQL,Databases,14,oracl databas sql introduç oracl databas schem program proced sql
+cnt_0350,Modelagem de dados relacional,Databases,13,model dad relac normal chav primár estrang relacion banc relac
+cnt_0351,Índices e performance de queries,Databases,16,índic perform queri índic tre funcion cri lo aceler consult sql
+cnt_0352,Redis como cache,Databases,16,redi cach redi banc memór cach sess fil mens
+cnt_0353,Transações e ACID,Databases,15,trans acid propriedad acid nívei isol control concorr banc relac
+cnt_0354,Migrações de banco de dados,Databases,15,migr banc dad version schem banc flyway liquibas alemb
+cnt_0355,SQL vs NoSQL,Databases,12,sql nosql escolh banc relac nosql document chav val graf
+cnt_0356,Joins na prática,Databases,16,join prát inn join left join right join full join us cad tip
+cnt_0357,Backup e recuperação,Databases,15,backup recuper estratég backup point tim recoveri alt disponibil banc dad
+cnt_0358,Normalização de banco de dados,Databases,16,normal banc dad organiz tabel reduz redund inconsist
+cnt_0359,Índices no PostgreSQL,Databases,14,índic postgresql tip índic cri impact consult escrit
+cnt_0360,Transactions e isolation levels,Databases,13,transact isol level read commit repeat read serializ efeit concorr
+cnt_0361,MongoDB queries avançadas,Databases,12,mongodb queri avanç filtr projeç aggreg índic banc nosql document
+cnt_0362,Relacionamentos N:N,Databases,10,relacion model tabel associ join relacion muit muit
+cnt_0363,Migration tools,Databases,11,migrat tool control evoluç schem flyway liquibas alemb
+cnt_0364,Query optimization,Databases,11,queri optim lend plan execuç otimiz consult sql lent
+cnt_0365,Redis estruturas de dados,Databases,17,redi estrut dad string hash list set sort set us cad estrut redi
+cnt_0366,Backup de bancos relacionais,Databases,12,backup banc relac dump lógic backup físic estratég retenç
+cnt_0367,Connection pooling,Databases,13,connect pool gerenci pool conex melhor perform estabil api
+cnt_0368,SQL window functions,Databases,13,sql window function row numb rank lag lead part anális sql
+cnt_0369,Modelagem para OLTP vs OLAP,Databases,13,model oltp olap diferenç model sistem transac analí
+cnt_0370,Constraints e integridade,Databases,14,constraint integr primari key foreign key uniqu check null prát
+cnt_0371,NoSQL quando usar,Databases,13,nosql us cas uso ideai document chav val colun graf
+cnt_0372,Oracle PL/SQL básico,Databases,13,oracl sql básic bloc anôn procedur function trat exceç sql
+cnt_0373,Modelagem dimensional,Databases,11,model dimens fat dimens dat warehous anális olap
+cnt_0374,Star schema e Snowflake schema,Databases,16,st schem snowflak schem diferenç esquem estrel floc nev model analí
+cnt_0375,Particionamento de tabelas,Databases,15,particion tabel particion rang list hash melhor perform grand volum
+cnt_0376,Replicação de bancos de dados,Databases,15,replic banc dad replic síncr assíncr alt disponibil leit escal
+cnt_0377,Sharding,Databases,10,shard distribu dad múltipl escal banc horizont
+cnt_0378,EXPLAIN ANALYZE na prática,Databases,14,explain analyz prát lend plan execuç identific gargal consult sql
+cnt_0379,Materialized views,Databases,12,materi view pré comput result complex view materi estratég refresh
+cnt_0380,Full-text search em bancos,Databases,15,full text search banc implement busc text recurs nativ postgresql outr sgbd
+cnt_0381,JSON em bancos relacionais,Databases,12,json banc relac armazen consult json jsonb postgresql oracl
+cnt_0382,Migração de dados entre bancos,Databases,16,migr dad banc estratég ferrament migr dad postgresql mysql oracl
+cnt_0383,Connection leaks,Databases,15,connect leak detect preven vaz conex aplic us banc dad
+cnt_0384,Read replicas,Databases,11,read repl escal leit répl cuid consist event
+cnt_0385,Constraints de integridade referencial,Databases,16,constraint integr refer delet cascad set null restr mant consist tabel
+cnt_0386,Tuning de parâmetros de banco,Databases,15,tune parâmetr banc ajust básic memór conex checkpoint melhor perform
+cnt_0387,Auditoria em bancos de dados,Databases,19,audit banc dad registr alter quê trigg recurs nativ audit

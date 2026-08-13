@@ -1,10 +1,9 @@
 package com.techtagger.backend.client;
 
-import com.techtagger.backend.dto.ml.MLBatchRequest;
-import com.techtagger.backend.dto.ml.MLBatchResponse;
-import com.techtagger.backend.dto.ml.MLRequest;
-import com.techtagger.backend.dto.ml.MLResponse;
-import com.techtagger.backend.exception.MLServiceUnavailableException;
+import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.TimeoutException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,12 +12,15 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.reactive.function.client.WebClientRequestException;
+
+import com.techtagger.backend.dto.ml.MLBatchRequest;
+import com.techtagger.backend.dto.ml.MLBatchResponse;
+import com.techtagger.backend.dto.ml.MLRequest;
+import com.techtagger.backend.dto.ml.MLResponse;
+import com.techtagger.backend.exception.MLServiceUnavailableException;
+
 import reactor.core.publisher.Mono;
 import reactor.util.retry.Retry;
-
-import java.time.Duration;
-import java.util.List;
-import java.util.concurrent.TimeoutException;
 
 @Component
 public class MLServiceClient {
@@ -46,7 +48,7 @@ public class MLServiceClient {
                     .onStatus(HttpStatusCode::is5xxServerError, response ->
                             Mono.error(new MLServiceUnavailableException("Serviço de ML indisponível: " + response.statusCode())))
                     .bodyToMono(MLResponse.class)
-                    .timeout(Duration.ofSeconds(10))
+                    .timeout(Duration.ofSeconds(30))
                     .retryWhen(Retry.backoff(2, Duration.ofMillis(500))
                             .filter(this::isErroTransitorio)
                             .doBeforeRetry(sig -> log.warn("Tentando novamente chamada a ML API (tentativa {}): {}",

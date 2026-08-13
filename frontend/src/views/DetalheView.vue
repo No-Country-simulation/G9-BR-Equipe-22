@@ -5,6 +5,17 @@ import { useConteudo } from '../composables/useConteudo'
 import CategoriaBadge from '../components/CategoriaBadge.vue'
 import ErroAlerta from '../components/ErroAlerta.vue'
 
+const CORES_CAT = {
+  Backend: 'var(--color-cat-backend)',
+  Frontend: 'var(--color-cat-frontend)',
+  DevOps: 'var(--color-cat-devops)',
+  Cloud: 'var(--color-cat-cloud)',
+  Mobile: 'var(--color-cat-mobile)',
+  Databases: 'var(--color-cat-databases)',
+  'Data Science': 'var(--color-cat-datascience)',
+  'Data Engineering': 'var(--color-cat-dataengineering)',
+}
+
 const route = useRoute()
 const { dados: conteudo, carregando, erro, buscarPorId } = useConteudo()
 

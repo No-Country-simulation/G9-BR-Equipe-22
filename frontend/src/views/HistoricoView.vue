@@ -9,6 +9,17 @@ const CATEGORIAS = [
   'Mobile', 'Databases', 'Data Science', 'Data Engineering',
 ]
 
+const CORES_CAT = {
+  Backend: 'var(--color-cat-backend)',
+  Frontend: 'var(--color-cat-frontend)',
+  DevOps: 'var(--color-cat-devops)',
+  Cloud: 'var(--color-cat-cloud)',
+  Mobile: 'var(--color-cat-mobile)',
+  Databases: 'var(--color-cat-databases)',
+  'Data Science': 'var(--color-cat-datascience)',
+  'Data Engineering': 'var(--color-cat-dataengineering)',
+}
+
 const { pagina, categoria, dados, carregando, erro, irPara, carregar } = usePaginacao(10)
 
 carregar()
