@@ -1,5 +1,7 @@
 package com.techtagger.backend.client;
 
+import com.techtagger.backend.dto.ml.MLBatchRequest;
+import com.techtagger.backend.dto.ml.MLBatchResponse;
 import com.techtagger.backend.dto.ml.MLRequest;
 import com.techtagger.backend.dto.ml.MLResponse;
 import com.techtagger.backend.exception.MLServiceUnavailableException;
@@ -15,6 +17,7 @@ import reactor.core.publisher.Mono;
 import reactor.util.retry.Retry;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeoutException;
 
 @Component
@@ -65,4 +68,35 @@ public class MLServiceClient {
                 || throwable instanceof TimeoutException
                 || throwable instanceof MLServiceUnavailableException;
     }
+    public MLBatchResponse classificarLote(List<MLRequest> items) {
+        long inicio = System.currentTimeMillis();
+
+        try {
+            MLBatchResponse resposta = webClient.post()
+                    .uri("/content/batch")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .bodyValue(new MLBatchRequest(items))
+                    .retrieve()
+                    .onStatus(HttpStatusCode::is4xxClientError, response ->
+                            Mono.error(new RuntimeException("Erro de validação no lote: " + response.statusCode())))
+                    .onStatus(HttpStatusCode::is5xxServerError, response ->
+                            Mono.error(new MLServiceUnavailableException("Serviço de ML indisponível: " + response.statusCode())))
+                    .bodyToMono(MLBatchResponse.class)
+                    .timeout(Duration.ofSeconds(30))
+                    .retryWhen(Retry.backoff(2, Duration.ofMillis(500))
+                            .filter(this::isErroTransitorio)
+                            .doBeforeRetry(sig -> log.warn("Tentando novamente lote (tentativa {}): {}",
+                                    sig.totalRetries() + 1, sig.failure().getMessage())))
+                    .block();
+
+            log.info("Lote de {} itens processado em {}ms", items.size(), System.currentTimeMillis() - inicio);
+            return resposta;
+
+        } catch (Exception e) {
+            log.error("Falha ao processar lote de {} itens: {}", items.size(), e.getMessage());
+            throw new MLServiceUnavailableException(
+                    "Não foi possível processar o lote no momento. Tente novamente em instantes.", e);
+        }
+    }
+
 }

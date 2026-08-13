@@ -5,6 +5,7 @@ import java.util.List;
 
 public record ConteudoResponse(
         Long id,
+        String titulo,
         String categoria,
         double probabilidade,
         List<String> keywords,

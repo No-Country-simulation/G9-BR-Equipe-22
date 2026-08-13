@@ -146,6 +146,7 @@ function limpar() {
         </div>
 
         <div v-else class="space-y-5">
+          <p class="text-sm font-medium text-[var(--color-muted)]">{{ resultado.titulo }}</p>
           <div>
             <p class="text-xs font-mono-tag text-[var(--color-muted)] mb-1.5">"categoria"</p>
             <div class="flex items-center gap-3">

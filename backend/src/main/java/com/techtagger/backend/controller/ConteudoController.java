@@ -1,6 +1,8 @@
 package com.techtagger.backend.controller;
 
+import com.techtagger.backend.dto.request.ConteudoBatchRequest;
 import com.techtagger.backend.dto.request.ConteudoRequest;
+import com.techtagger.backend.dto.response.ConteudoBatchResponse;
 import com.techtagger.backend.dto.response.ConteudoResponse;
 import com.techtagger.backend.model.Conteudo;
 import com.techtagger.backend.service.ConteudoService;
@@ -39,5 +41,10 @@ public class ConteudoController {
             @RequestParam(required = false) String categoria,
             @PageableDefault(size = 10, sort = "criadoEm", direction = Sort.Direction.DESC) Pageable pageable) {
         return ResponseEntity.ok(service.listar(categoria, pageable));
+    }
+
+    @PostMapping("/batch")
+    public ResponseEntity<ConteudoBatchResponse> processarLote(@Valid @RequestBody ConteudoBatchRequest request) {
+        return ResponseEntity.ok(service.processarLote(request));
     }
 }

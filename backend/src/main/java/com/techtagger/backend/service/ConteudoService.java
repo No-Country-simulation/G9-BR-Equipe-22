@@ -1,8 +1,12 @@
 package com.techtagger.backend.service;
 
 import com.techtagger.backend.client.MLServiceClient;
+import com.techtagger.backend.dto.ml.MLBatchResponse;
+import com.techtagger.backend.dto.ml.MLRequest;
 import com.techtagger.backend.dto.ml.MLResponse;
+import com.techtagger.backend.dto.request.ConteudoBatchRequest;
 import com.techtagger.backend.dto.request.ConteudoRequest;
+import com.techtagger.backend.dto.response.ConteudoBatchResponse;
 import com.techtagger.backend.dto.response.ConteudoResponse;
 import com.techtagger.backend.exception.ConteudoNaoEncontradoException;
 import com.techtagger.backend.model.Conteudo;
@@ -12,6 +16,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class ConteudoService {
@@ -43,6 +49,7 @@ public class ConteudoService {
 
         return new ConteudoResponse(
                 conteudo.getId(),
+                conteudo.getTitulo(),
                 resultado.category(),
                 resultado.probability(),
                 resultado.keywords(),
@@ -56,6 +63,7 @@ public class ConteudoService {
 
         return new ConteudoResponse(
                 conteudo.getId(),
+                conteudo.getTitulo(),
                 conteudo.getCategoria(),
                 conteudo.getProbabilidade(),
                 conteudo.getKeywords(),
@@ -68,5 +76,41 @@ public class ConteudoService {
             return repository.findByCategoria(categoria, pageable);
         }
         return repository.findAll(pageable);
+    }
+    public ConteudoBatchResponse processarLote(ConteudoBatchRequest request) {
+        log.info("Processando lote de {} conteúdos", request.items().size());
+
+        List<MLRequest> mlItems = request.items().stream()
+                .map(item -> new MLRequest(item.titulo(), item.texto()))
+                .toList();
+
+        MLBatchResponse resultadoLote = mlServiceClient.classificarLote(mlItems);
+
+        List<ConteudoResponse> respostas = new java.util.ArrayList<>();
+
+        for (int i = 0; i < resultadoLote.results().size(); i++) {
+            var resultado = resultadoLote.results().get(i);
+            var original = request.items().get(i);
+
+            Conteudo conteudo = new Conteudo();
+            conteudo.setTitulo(original.titulo());
+            conteudo.setTexto(original.texto());
+            conteudo.setCategoria(resultado.category());
+            conteudo.setProbabilidade(resultado.probability());
+            conteudo.setKeywords(resultado.keywords());
+            repository.save(conteudo);
+
+            respostas.add(new ConteudoResponse(
+                    conteudo.getId(),
+                    conteudo.getTitulo(),
+                    resultado.category(),
+                    resultado.probability(),
+                    resultado.keywords(),
+                    resultado.relatedContent()
+            ));
+        }
+
+        log.info("Lote processado: {} conteúdos salvos", respostas.size());
+        return new ConteudoBatchResponse(respostas.size(), respostas);
     }
 }

@@ -38,12 +38,20 @@ export async function buscarConteudoPorId(id) {
     throw normalizarErro(err)
   }
 }
-
 export async function listarConteudos({ categoria = '', page = 0, size = 10 } = {}) {
   try {
     const params = { page, size }
     if (categoria) params.categoria = categoria
     const { data } = await api.get('/conteudo', { params })
+    return data
+  } catch (err) {
+    throw normalizarErro(err)
+  }
+}
+
+export async function processarLote(items) {
+  try {
+    const { data } = await api.post('/conteudo/batch', { items })
     return data
   } catch (err) {
     throw normalizarErro(err)

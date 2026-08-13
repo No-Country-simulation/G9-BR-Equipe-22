@@ -1,0 +1,6 @@
+package com.techtagger.backend.dto.ml;
+
+import java.util.List;
+
+public record MLBatchRequest(List<MLRequest> items) {
+}
