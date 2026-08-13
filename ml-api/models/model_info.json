@@ -12,10 +12,10 @@
     "Frontend",
     "Mobile"
   ],
-  "n_features": 690,
-  "n_samples": 388,
-  "accuracy": 0.8717948717948718,
-  "f1_macro": 0.8671504127966977,
+  "n_features": 5000,
+  "n_samples": 1520,
+  "accuracy": 0.9552238805970149,
+  "f1_macro": 0.9546550113094427,
   "description": "Classificação de conteúdo técnico com SVM Linear calibrado",
   "technologies_dict": {}
 }
