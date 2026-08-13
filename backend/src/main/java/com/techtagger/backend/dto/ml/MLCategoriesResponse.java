@@ -1,4 +1,6 @@
 package com.techtagger.backend.dto.ml;
 
-public record MLCategoriesResponse() {
+import java.util.List;
+
+public record MLCategoriesResponse(List<String> categories) {
 }

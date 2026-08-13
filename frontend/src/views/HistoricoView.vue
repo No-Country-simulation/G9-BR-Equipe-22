@@ -1,26 +1,21 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
 import { usePaginacao } from '../composables/usePaginacao'
+import { listarCategorias } from '../services/api'
 import CategoriaBadge from '../components/CategoriaBadge.vue'
 import ErroAlerta from '../components/ErroAlerta.vue'
 
-const CATEGORIAS = [
-  'Backend', 'Frontend', 'DevOps', 'Cloud',
-  'Mobile', 'Databases', 'Data Science', 'Data Engineering',
-]
-
-const CORES_CAT = {
-  Backend: 'var(--color-cat-backend)',
-  Frontend: 'var(--color-cat-frontend)',
-  DevOps: 'var(--color-cat-devops)',
-  Cloud: 'var(--color-cat-cloud)',
-  Mobile: 'var(--color-cat-mobile)',
-  Databases: 'var(--color-cat-databases)',
-  'Data Science': 'var(--color-cat-datascience)',
-  'Data Engineering': 'var(--color-cat-dataengineering)',
-}
-
+const categoriasDisponiveis = ref([])
 const { pagina, categoria, dados, carregando, erro, irPara, carregar } = usePaginacao(10)
+
+onMounted(async () => {
+  try {
+    categoriasDisponiveis.value = await listarCategorias()
+  } catch (e) {
+    categoriasDisponiveis.value = []
+  }
+})
 
 carregar()
 </script>
@@ -38,7 +33,7 @@ carregar()
           class="border border-[var(--color-line)] bg-white px-3 py-2 text-sm font-mono-tag focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent transition-shadow cursor-pointer"
         >
           <option value="">Todas as categorias</option>
-          <option v-for="c in CATEGORIAS" :key="c" :value="c">{{ c }}</option>
+            <option v-for="c in categoriasDisponiveis" :key="c" :value="c">{{ c }}</option>
         </select>
       </div>
     </div>

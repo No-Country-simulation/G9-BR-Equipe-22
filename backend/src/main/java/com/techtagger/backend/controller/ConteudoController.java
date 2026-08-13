@@ -1,5 +1,6 @@
 package com.techtagger.backend.controller;
 
+import com.techtagger.backend.client.MLServiceClient;
 import com.techtagger.backend.dto.request.ConteudoBatchRequest;
 import com.techtagger.backend.dto.request.ConteudoRequest;
 import com.techtagger.backend.dto.response.ConteudoBatchResponse;
@@ -7,6 +8,7 @@ import com.techtagger.backend.dto.response.ConteudoResponse;
 import com.techtagger.backend.model.Conteudo;
 import com.techtagger.backend.service.ConteudoService;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -18,13 +20,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/conteudo")
+@RequiredArgsConstructor
 public class ConteudoController {
 
     private final ConteudoService service;
+    private final MLServiceClient mlServiceClient;
 
-    public ConteudoController(ConteudoService service) {
-        this.service = service;
-    }
 
     @PostMapping
     public ResponseEntity<ConteudoResponse> processar(@Valid @RequestBody ConteudoRequest request) {
@@ -46,5 +47,10 @@ public class ConteudoController {
     @PostMapping("/batch")
     public ResponseEntity<ConteudoBatchResponse> processarLote(@Valid @RequestBody ConteudoBatchRequest request) {
         return ResponseEntity.ok(service.processarLote(request));
+    }
+
+    @GetMapping("/categorias")
+    public ResponseEntity<List<String>> listarCategorias() {
+        return ResponseEntity.ok(mlServiceClient.listarCategorias());
     }
 }

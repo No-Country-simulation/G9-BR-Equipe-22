@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 
+import com.techtagger.backend.dto.ml.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,10 +14,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.reactive.function.client.WebClientRequestException;
 
-import com.techtagger.backend.dto.ml.MLBatchRequest;
-import com.techtagger.backend.dto.ml.MLBatchResponse;
-import com.techtagger.backend.dto.ml.MLRequest;
-import com.techtagger.backend.dto.ml.MLResponse;
 import com.techtagger.backend.exception.MLServiceUnavailableException;
 
 import reactor.core.publisher.Mono;
@@ -100,5 +97,27 @@ public class MLServiceClient {
                     "Não foi possível processar o lote no momento. Tente novamente em instantes.", e);
         }
     }
+    public List<String> listarCategorias() {
+        try {
+            MLCategoriesResponse resposta = webClient.get()
+                    .uri("/content/categories")
+                    .retrieve()
+                    .onStatus(HttpStatusCode::is4xxClientError, response ->
+                            Mono.error(new RuntimeException("Erro ao buscar categorias: " + response.statusCode())))
+                    .onStatus(HttpStatusCode::is5xxServerError, response ->
+                            Mono.error(new MLServiceUnavailableException("Serviço de ML indisponível: " + response.statusCode())))
+                    .bodyToMono(MLCategoriesResponse.class)
+                    .timeout(Duration.ofSeconds(10))
+                    .block();
+
+            return resposta != null ? resposta.categories() : List.of();
+
+        } catch (Exception e) {
+            log.error("Falha ao buscar categorias: {}", e.getMessage());
+            throw new MLServiceUnavailableException(
+                    "Não foi possível buscar as categorias no momento.", e);
+        }
+    }
+
 
 }

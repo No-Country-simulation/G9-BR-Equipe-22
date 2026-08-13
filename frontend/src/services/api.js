@@ -58,4 +58,13 @@ export async function processarLote(items) {
   }
 }
 
+export async function listarCategorias() {
+  try {
+    const { data } = await api.get('/conteudo/categorias')
+    return data
+  } catch (err) {
+    throw normalizarErro(err)
+  }
+}
+
 export default api
