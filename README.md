@@ -2,11 +2,17 @@
 
 > Classifique, rotule e organize conteúdo técnico automaticamente.
 
-[![Backend CI](https://github.com/SEU_GRUPO/techtagger/actions/workflows/backend-ci.yml/badge.svg)](../../actions/workflows/backend-ci.yml)
-[![ML API CI](https://github.com/SEU_GRUPO/techtagger/actions/workflows/ml-api-ci.yml/badge.svg)](../../actions/workflows/ml-api-ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 Projeto desenvolvido para o Hackathon **TechMind** — Organização Inteligente de Conhecimento Técnico. Recebe um conteúdo técnico (título + texto) e devolve categoria, palavras-chave e conteúdos relacionados, tudo em JSON, pronto para consumo por outras aplicações.
+
+## 🌐 Aplicação online
+
+A aplicação está disponível em ambiente de produção:
+
+**🔗 TechTagger:** https://techtagger.duckdns.org/
+
+Acesse para testar a aplicação diretamente sem necessidade de configurar o ambiente localmente.
 
 ---
 
@@ -156,10 +162,9 @@ techtagger/
 | Ciência de Dados | Python, Pandas, Scikit-Learn, TF-IDF, Sentence Transformers, YAKE |
 | ML API | FastAPI, Uvicorn, Pydantic |
 | Backend | Java 17, Spring Boot, Spring Data JPA, WebClient, Flyway |
-| Frontend (opcional) | React / Vue *(definir conforme o time)* |
+| Frontend | Vue, Tailwind |
 | Banco de Dados | MySQL 8 |
 | Infraestrutura | Docker, Docker Compose, OCI (Object Storage, Compute) |
-| CI/CD | GitHub Actions |
 
 ---
 
@@ -246,9 +251,9 @@ Mais exemplos em [`docs/api-examples.md`](./docs/api-examples.md), [`backend/REA
 | Métrica | Valor |
 |---|---|
 | Categorias | Backend, Cloud, Data Engineering, Data Science, Databases, DevOps, Frontend, Mobile |
-| Amostras de treino | 388 |
-| Acurácia (teste) | ~75,6% |
-| F1-score ponderado (teste) | ~76,1% |
+| Amostras no Dataset | 1520 |
+| Acurácia (acc) | +95% |
+| F1-score ponderado (F1-score macro) | +95% |
 | Abordagem de classificação | TF-IDF + Regressão Logística |
 | Abordagem de busca semântica | Sentence Transformers (`all-MiniLM-L6-v2`) |
 
@@ -261,8 +266,7 @@ Detalhes completos do treino, EDA e avaliação em [`data-science/notebooks/`](.
 | Serviço OCI | Uso no projeto |
 |---|---|
 | **Object Storage** | Armazenamento dos arquivos do modelo (`.pkl`, `.npy`, `.csv`, `.json`) |
-| **OCI Compute** | Hospedagem da ML API e/ou do Backend |
-| **Banco de dados** *(opcional)* | Alternativa gerenciada ao MySQL local |
+| **OCI Compute** | Hospedagem da ML API, API Java, Frontend Vue e Banco de Dados |
 
 Detalhes de configuração em [`infra/README.md`](./infra/README.md).
 
@@ -272,10 +276,12 @@ Detalhes de configuração em [`infra/README.md`](./infra/README.md).
 
 | Nome | Papel | GitHub |
 |---|---|---|
-| _(preencher)_ | Ciência de Dados | |
-| _(preencher)_ | Backend | |
-| _(preencher)_ | Frontend | |
-| _(preencher)_ | DevOps / OCI | |
+| _Renato Oshiro_ | Ciência de Dados | |
+| _Gabriel Silva_ | Machine Learning | |
+| _Henrique Pereira_ | Backend | |
+| _Abílio Bossa_ | Frontend | |
+| _Renato Oshiro_ | DevOps / OCI | |
+| _Diego Alves_ | Documentação | |
 
 ---
 
