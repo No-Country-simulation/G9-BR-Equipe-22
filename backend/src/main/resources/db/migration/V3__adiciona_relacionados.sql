@@ -1,0 +1,1 @@
+ALTER TABLE conteudo ADD COLUMN relacionados TEXT;
