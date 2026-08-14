@@ -5,17 +5,6 @@ import { useConteudo } from '../composables/useConteudo'
 import CategoriaBadge from '../components/CategoriaBadge.vue'
 import ErroAlerta from '../components/ErroAlerta.vue'
 
-const CORES_CAT = {
-  Backend: 'var(--color-cat-backend)',
-  Frontend: 'var(--color-cat-frontend)',
-  DevOps: 'var(--color-cat-devops)',
-  Cloud: 'var(--color-cat-cloud)',
-  Mobile: 'var(--color-cat-mobile)',
-  Databases: 'var(--color-cat-databases)',
-  'Data Science': 'var(--color-cat-datascience)',
-  'Data Engineering': 'var(--color-cat-dataengineering)',
-}
-
 const route = useRoute()
 const { dados: conteudo, carregando, erro, buscarPorId } = useConteudo()
 
@@ -46,6 +35,11 @@ onMounted(() => buscarPorId(route.params.id))
       <div class="p-6 space-y-5">
         <p class="text-sm font-medium">{{ conteudo.titulo }}</p>
 
+        <div>
+          <p class="text-xs font-mono-tag text-[var(--color-muted)] mb-1.5">"texto"</p>
+          <p class="text-sm text-[var(--color-ink)] leading-relaxed whitespace-pre-wrap">{{ conteudo.texto }}</p>
+        </div>
+
         <div class="flex items-center gap-3">
           <CategoriaBadge :categoria="conteudo.categoria" />
           <span class="text-sm text-[var(--color-muted)] font-mono-tag"
@@ -64,6 +58,22 @@ onMounted(() => buscarPorId(route.params.id))
               {{ kw }}
             </span>
           </div>
+        </div>
+
+        <div v-if="conteudo.relacionados?.length">
+          <p class="text-xs font-mono-tag text-[var(--color-muted)] mb-1.5">"relacionados"</p>
+          <ul class="space-y-2">
+            <li
+              v-for="(rel, i) in conteudo.relacionados"
+              :key="i"
+              class="text-sm border-l-2 border-[var(--color-accent)] pl-3"
+            >
+              <p class="font-medium">{{ rel.title }}</p>
+              <p class="text-xs text-[var(--color-muted)] font-mono-tag">
+                {{ rel.category }} · {{ (rel.similarity * 100).toFixed(0) }}% similar
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

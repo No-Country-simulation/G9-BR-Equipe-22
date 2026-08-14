@@ -1,5 +1,6 @@
 package com.techtagger.backend.model;
 
+import com.techtagger.backend.dto.ml.RelatedContent;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -28,6 +29,17 @@ public class Conteudo {
 
     @Column(name = "criado_em")
     private LocalDateTime criadoEm = LocalDateTime.now();
+    @Convert(converter = RelatedContentListConverter.class)
+    @Column(columnDefinition = "TEXT")
+    private List<RelatedContent> relacionados;
+
+    public List<RelatedContent> getRelacionados() {
+        return relacionados;
+    }
+
+    public void setRelacionados(List<RelatedContent> relacionados) {
+        this.relacionados = relacionados;
+    }
 
     public Conteudo() {}
 

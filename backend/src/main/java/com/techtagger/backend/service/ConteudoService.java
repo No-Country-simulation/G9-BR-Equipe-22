@@ -43,6 +43,7 @@ public class ConteudoService {
         conteudo.setCategoria(resultado.category());
         conteudo.setProbabilidade(resultado.probability());
         conteudo.setKeywords(resultado.keywords());
+        conteudo.setRelacionados(resultado.relatedContent());
         repository.save(conteudo);
 
         log.info("Conteúdo salvo com id={} categoria={}", conteudo.getId(), conteudo.getCategoria());
@@ -50,6 +51,7 @@ public class ConteudoService {
         return new ConteudoResponse(
                 conteudo.getId(),
                 conteudo.getTitulo(),
+                conteudo.getTexto(),
                 resultado.category(),
                 resultado.probability(),
                 resultado.keywords(),
@@ -64,10 +66,11 @@ public class ConteudoService {
         return new ConteudoResponse(
                 conteudo.getId(),
                 conteudo.getTitulo(),
+                conteudo.getTexto(),
                 conteudo.getCategoria(),
                 conteudo.getProbabilidade(),
                 conteudo.getKeywords(),
-                null
+                conteudo.getRelacionados()
         );
     }
 
@@ -103,6 +106,7 @@ public class ConteudoService {
             respostas.add(new ConteudoResponse(
                     conteudo.getId(),
                     conteudo.getTitulo(),
+                    conteudo.getTexto(),
                     resultado.category(),
                     resultado.probability(),
                     resultado.keywords(),
