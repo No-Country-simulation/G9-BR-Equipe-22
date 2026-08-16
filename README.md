@@ -278,7 +278,7 @@ Detalhes de configuração em [`infra/README.md`](./infra/README.md).
 |---|---|---|
 | _Renato Oshiro_ | Ciência de Dados | |
 | _Gabriel Silva_ | Machine Learning | |
-| _Henrique Pereira_ | Backend | |
+| _Henrique Pereira_ | Fullstack | |
 | _Abílio Bossa_ | Frontend | |
 | _Renato Oshiro_ | DevOps / OCI | |
 | _Diego Alves_ | Documentação | |
