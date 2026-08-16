@@ -115,8 +115,50 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!-- Configuração explícita do Lombok como annotation processor.
+			     Sem isso, dependendo da versão do Maven/JDK usada localmente,
+			     o @RequiredArgsConstructor (e outras anotações do Lombok) não
+			     é processado em tempo de compilação, e o javac tenta usar um
+			     construtor padrão que não existe para campos "final" — foi
+			     exatamente o erro visto ao rodar "./mvnw test":
+			     "variable service not initialized in the default constructor". -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+							<version>${lombok.version}</version>
+						</path>
+					</annotationProcessorPaths>
+				</configuration>
+			</plugin>
+			<!-- JaCoCo: gera relatório de cobertura de teste em target/site/jacoco/index.html
+			     após "mvn test". Adicionado nesta revisão porque o projeto não tinha
+			     nenhuma forma de medir cobertura configurada. -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.12</version>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
 </project>
-
