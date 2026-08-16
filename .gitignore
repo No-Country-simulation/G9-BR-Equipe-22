@@ -35,3 +35,6 @@ Thumbs.db
 # ===== Modelos grandes (se não quiser versionar) =====
 # ml-api/models/*.pkl
 # ml-api/models/*.npy
+# ===== Cobertura de testes (gerada por npm run test:coverage / pytest --cov) =====
+frontend/coverage/
+ml-api/.coverage
